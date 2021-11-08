@@ -2,7 +2,24 @@
 Example of populating data into a React Chart ([FusionCharts](https://www.fusioncharts.com/)) from a API that was created through Liferay Objects (7.4).
 
 ### Expected Use
-This resource can be used as a 7.4 Remote App (iFrame or Custom Element) or a separate React App altogether.
+This resource can be used as a 7.4 Remote App (iFrame or Custom Element) or a separate React App hosted elsewhere.
+
+## Update CORS policy
+
+In System Settings > Security Tools > Web Contexts Cross-Origin Resource Sharing (CORS) create a CORS policy. Default values work to allow access Cross-Origin Resource Sharing for this resource.
+
+Default values are: 
+
+| Field                             |  Value                                          |
+| :---                              | :---                                            |
+| Dynamic Web Context OSGi filter   | (&(!(liferay.cors=false))(osgi.jaxrs.name=\*))  |
+| URL Pattern                       | \*                                              |
+| CORS Response Headers             | Access-Control-Allow-Credentials: true          |
+| CORS Response Headers             | Access-Control-Allow-Headers: \*                |
+| CORS Response Headers             | Access-Control-Allow-Methods: \*                |
+| CORS Response Headers             | Access-Control-Allow-Origin: \*                 |
+
+This provides a very broad rule. A more restricted policy is recommended for production use.
 
 ## Create Dashboard Data Object
 
