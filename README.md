@@ -4,7 +4,7 @@ Example of populating data into a React Chart ([FusionCharts](https://www.fusion
 ### Expected Use
 This resource can be used as a 7.4 Remote App (iFrame or Custom Element) or a separate React App hosted elsewhere.
 
-![Component Outcomes](./assets/Component-Display.png)
+![Component Outcomes](./assets/Component-Display-2.png)
 
 ## Add [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) policy 
 
