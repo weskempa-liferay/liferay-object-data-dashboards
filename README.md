@@ -42,8 +42,8 @@ This provides a very broad rule. A more restricted policy is recommended for pro
 
 4. Return to the Details tab and publish your new object.
 
-## Install Packages
-Once downloaded run:
+## Clone Repo and Install Packages
+Clone repo and once ready run the following:
 
 yarn install
 
