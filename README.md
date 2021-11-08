@@ -80,7 +80,7 @@ yarn start
   
 1. Using 'yarn start' start the server. It should hit Liferay's headless API using Basic Authentication (test@liferay.com:test over port 8080)
  
-2 .Once the server is running, you should be able to see the application running on it's own server at http://localhost:3000/ or similar. 
+2. Once the server is running, you should be able to see the application running on it's own server at http://localhost:3000/ or similar. 
  
 ## Remote App (iFrame) 
   
