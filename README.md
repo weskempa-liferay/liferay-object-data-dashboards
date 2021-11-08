@@ -38,7 +38,7 @@ This provides a very broad rule. A more restricted policy is recommended for pro
     | Label  | String    | Yes       |
     | Value  | Integer   | Yes       |
 
-3. Leave the object configuration in Company Scope
+3. Leave the object configuration in Company Scope (default).
 
 4. Return to the Details tab and publish your new object.
 
