@@ -4,6 +4,8 @@ Example of populating data into a React Chart ([FusionCharts](https://www.fusion
 ### Expected Use
 This resource can be used as a 7.4 Remote App (iFrame or Custom Element) or a separate React App hosted elsewhere.
 
+![Component Outcomes](./assets/Component-Display.png)
+
 ## Add [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) policy 
 
 In System Settings > Security Tools > Web Contexts Cross-Origin Resource Sharing (CORS) create a CORS policy. Default values work to allow access Cross-Origin Resource Sharing for this resource.
