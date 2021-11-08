@@ -1,8 +1,8 @@
-# liferay-object-data-dashboards
+# React Chart using data from Liferay Objects (7.4)
 Example of populating data into a React Chart ([FusionCharts](https://www.fusioncharts.com/) ) from a datasource that was created through Liferay Objects (7.4).
 
 ### Expected Use
-This resource can be used as a 7.4 Remote App(iFrame or Custom Element) or a separate React App altogether.
+This resource can be used as a 7.4 Remote App (iFrame or Custom Element) or a separate React App altogether.
 
 ## install
 Once downloaded run:
