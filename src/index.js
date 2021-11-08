@@ -8,11 +8,7 @@ import FusionCharts from 'fusioncharts';
 import Charts from 'fusioncharts/fusioncharts.charts';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-import LiferayApi from './common/services/liferay/api';
-
 import './common/styles/index.scss';
-
-ReactFC.fcRoot(FusionCharts, Charts, FusionTheme);
 
 class WebComponent extends HTMLElement {
 	connectedCallback() {

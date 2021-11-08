@@ -26,7 +26,7 @@ const baseFetch = async (url, {body, method = 'GET'} = {}) => {
 	// Auth token is the best method for live use and
 	// is available when acting as a Web Component (Custom Element)
 
-	if (getLiferayAuthenticationToken()==""){
+	if (getLiferayAuthenticationToken()===""){
 		headers = new Headers({
 	    	'Authorization': 'Basic ' + btoa('test@liferay.com:test'), 
 			'Content-Type': 'application/json'
