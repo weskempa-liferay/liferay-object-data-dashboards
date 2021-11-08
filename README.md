@@ -94,6 +94,8 @@ yarn start
     }
   ]
   ```
+
+<img src="./assets/Component-Outcomes.png" alt="drawing" width="500"/>
   
 ## Use as separate React App
   
@@ -150,5 +152,7 @@ File sizes after gzip:
 | URL 2 (+) | http://localhost:8080/react-bar-chart/static/js/main.c7b9ace8.chunk.js   |
 | URL 3 (+) | http://localhost:8080/react-bar-chart/static/js/runtime-main.1ad6e658.js |
 | CSS       | http://localhost:8080/react-bar-chart/static/css/main.26c647c1.chunk.css |
-    
+ 
 Save, then this application will be available in your widgets list.
+ 
+<img src="./assets/RemoteApp-Config.png" alt="drawing" width="500"/>
