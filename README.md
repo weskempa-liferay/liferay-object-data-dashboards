@@ -2,15 +2,24 @@
 Example of populating data into a React Chart ([FusionCharts](https://www.fusioncharts.com/)) from a API that was created through Liferay Objects (7.4).
 
 ### Expected Use
-This resource can be used as a 7.4 Remote App (iFrame or Custom Element) or a separate React App altogether.
+This resource can be used as a 7.4 Remote App (iFrame or Custom Element) or a separate React App hosted elsewhere.
 
-## Install Packages
-Once downloaded run:
+## Add [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) policy 
 
-node install
+In System Settings > Security Tools > Web Contexts Cross-Origin Resource Sharing (CORS) create a CORS policy. Default values work to allow access Cross-Origin Resource Sharing for this resource.
 
-## Start local server
-yarn start
+Default values are: 
+
+| Field                             |  Value                                          |
+| :---                              | :---                                            |
+| Dynamic Web Context OSGi filter   | (&(!(liferay.cors=false))(osgi.jaxrs.name=\*))  |
+| URL Pattern                       | \*                                              |
+| CORS Response Headers             | Access-Control-Allow-Credentials: true          |
+| CORS Response Headers             | Access-Control-Allow-Headers: \*                |
+| CORS Response Headers             | Access-Control-Allow-Methods: \*                |
+| CORS Response Headers             | Access-Control-Allow-Origin: \*                 |
+
+This provides a very broad rule. A more restricted policy is recommended for production use.
 
 ## Create Dashboard Data Object
 
@@ -24,12 +33,20 @@ yarn start
 
     | Field  |  Type     | Required  |
     | :---   |   :----:  |  :----:   |
-    | Label  | String    | Yes        |
+    | Label  | String    | Yes       |
     | Value  | Integer   | Yes       |
 
 3. Leave the object configuration in Company Scope
 
 4. Return to the Details tab and publish your new object.
+
+## Install Packages
+Once downloaded run:
+
+yarn install
+
+## Start local server
+yarn start
 
 ## Add Data
 
@@ -76,7 +93,7 @@ yarn start
   ]
   ```
   
-## Use as separate React App altogether
+## Use as separate React App
   
 1. Using 'yarn start' start the server. It should hit Liferay's headless API using Basic Authentication (test@liferay.com:test over port 8080)
  
@@ -90,8 +107,8 @@ yarn start
     
 3. Create a new Remote App with the following field details:
 
-| Field    |  Value                  |
-| :---     |         :----:          |
+| Field    | Value                   |
+| :---     | :---                    |
 | Name     | React Bar Chart         |
 | Type     | iFrame                  |
 | URL      | http://localhost:3000/  |
@@ -123,13 +140,13 @@ File sizes after gzip:
     * *Note: Reference the build names from the previous step.*
     * *Note: Use the (+) icon for adding additional URL values.* 
 
-| Field    |  Value                                                                   |
-| :---     | :---                                                                     |
-| Name     | React Bar Chart                                                          |
-| Type     | Custom Element                                                           |
-| URL 1    | http://localhost:8080/react-bar-chart/static/js/2.f86fd244.chunk.js      |
-| URL 2(+) | http://localhost:8080/react-bar-chart/static/js/main.c7b9ace8.chunk.js   |
-| URL 3(+) | http://localhost:8080/react-bar-chart/static/js/runtime-main.1ad6e658.js |
-| CSS      | http://localhost:8080/react-bar-chart/static/css/main.26c647c1.chunk.css |
+| Field     |  Value                                                                   |
+| :---      | :---                                                                     |
+| Name      | React Bar Chart                                                          |
+| Type      | Custom Element                                                           |
+| URL 1     | http://localhost:8080/react-bar-chart/static/js/2.f86fd244.chunk.js      |
+| URL 2 (+) | http://localhost:8080/react-bar-chart/static/js/main.c7b9ace8.chunk.js   |
+| URL 3 (+) | http://localhost:8080/react-bar-chart/static/js/runtime-main.1ad6e658.js |
+| CSS       | http://localhost:8080/react-bar-chart/static/css/main.26c647c1.chunk.css |
     
 Save, then this application will be available in your widgets list.
