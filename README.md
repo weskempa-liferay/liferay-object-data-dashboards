@@ -7,7 +7,7 @@ This resource can be used as a 7.4 Remote App (iFrame or Custom Element) or a se
 ## Install Packages
 Once downloaded run:
 
-node install
+yarn install
 
 ## Start local server
 yarn start
