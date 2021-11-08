@@ -141,8 +141,9 @@ File sizes after gzip:
 5. Then, navigate to Remote Apps within Liferay's control panel.
     
 6. Create a new Remote App with the following field details. 
-    * *Note: Reference the build names from the previous step.*
-    * *Note: Use the (+) icon for adding additional URL values.* 
+    * *Note A: Reference the build names from the previous step.*
+    * *Note B: Use the (+) icon for adding additional URL values.* 
+    * *Note C: The build file names change with every build. Remember to keep them up to date when future builds are made.* 
 
 | Field     |  Value                                                                   |
 | :---      | :---                                                                     |
