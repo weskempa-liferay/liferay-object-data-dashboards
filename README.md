@@ -76,7 +76,7 @@ yarn start
   ]
   ```
   
-## Use as separate React App altogether
+## Use as separate React App
   
 1. Using 'yarn start' start the server. It should hit Liferay's headless API using Basic Authentication (test@liferay.com:test over port 8080)
  
