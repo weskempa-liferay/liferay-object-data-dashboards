@@ -4,14 +4,6 @@ Example of populating data into a React Chart ([FusionCharts](https://www.fusion
 ### Expected Use
 This resource can be used as a 7.4 Remote App (iFrame or Custom Element) or a separate React App altogether.
 
-## Install Packages
-Once downloaded run:
-
-yarn install
-
-## Start local server
-yarn start
-
 ## Create Dashboard Data Object
 
 1. Create Object named:
@@ -24,12 +16,20 @@ yarn start
 
     | Field  |  Type     | Required  |
     | :---   |   :----:  |  :----:   |
-    | Label  | String    | Yes        |
+    | Label  | String    | Yes       |
     | Value  | Integer   | Yes       |
 
 3. Leave the object configuration in Company Scope
 
 4. Return to the Details tab and publish your new object.
+
+## Install Packages
+Once downloaded run:
+
+yarn install
+
+## Start local server
+yarn start
 
 ## Add Data
 
