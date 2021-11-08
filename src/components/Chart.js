@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+
 import FusionCharts from 'fusioncharts';
 import Charts from 'fusioncharts/fusioncharts.charts';
 import ReactFC from 'react-fusioncharts';
@@ -28,23 +28,17 @@ class Chart extends Component {
     function getChartData(data){
         let chartData = [];
         for (let i in data){
-
             let obj = {};
             obj.value = data[i].value;
             obj.label = data[i].label;
             chartData.push(obj);
-
         }
         return chartData;
     }
 
-
-    console.log("LiferayApi");
-
     LiferayApi("o/c/dashboarddataobjects/")
       .then((result) => {
-        //this.setState({ users: result.data.items })
-        console.log(result.data.items);
+        //console.log(result.data.items);
 
         this.setState({
           
@@ -62,11 +56,8 @@ class Chart extends Component {
 
         });
 
-        console.log("After");
-
       })
       .catch(console.log)
-
   }
 
   render() {
