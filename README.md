@@ -78,11 +78,11 @@ Example: http://localhost:8080/o/api/?endpoint=http://localhost:8080/o/c/dashboa
   
     TBD
   
-  ## Remote App(iFrame) 
+  ## Remote App (iFrame) 
   
     TBD
   
-  ## Remote App(Custom Element)
+  ## Remote App (Custom Element)
   
     TBD
 
