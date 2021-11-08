@@ -57,6 +57,7 @@ yarn start
     Example: http://localhost:8080/o/api/?endpoint=http://localhost:8080/o/c/dashboarddataobjects/openapi.json
 
 2. Add the following data and press execute. This will add the number of records shown below.
+    * *Note: Feel free to use your own labels and values.*
 
 ```
 [
