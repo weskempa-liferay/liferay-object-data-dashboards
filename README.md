@@ -200,4 +200,4 @@ Save, then this application will be available in your widgets list.
 
    *NOTE: Choose this method when you are demoing from a live server that you DO NOT have file system control over (LOL/SaaS) and you do not have access to run a separate live react server.* 
 
-Similar to Option 2, however once the files are created they are added to the Liferay Document Library and hosted using Resource URLs. 
+Similar to Option 2, however once the files are created they are added to the Liferay Document Library (or any public online resource - Google Drive, etc) and hosted using Resource URLs. 
