@@ -96,8 +96,6 @@ This provides a very broad rule. A more restricted policy is recommended for pro
   ]
   ```
 
-<img src="./assets/Component-Outcomes.png" alt="drawing" width="500"/>
-
 ## Clone Repo and Install Packages
 Clone repo and once ready run the following:
 
@@ -105,6 +103,8 @@ yarn install
 
 ## Start local server
 yarn start
+
+<img src="./assets/Component-Outcomes.png" alt="drawing" width="500"/>
 
 # Display Method Options
 
