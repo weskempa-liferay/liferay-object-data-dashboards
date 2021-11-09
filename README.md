@@ -105,14 +105,18 @@ yarn start
   ```
 
 <img src="./assets/Component-Outcomes.png" alt="drawing" width="500"/>
-  
-## Use as separate React App
+
+# Display Method Options
+
+So many ways to use it!
+
+## Display Method A - Use as separate React App
   
 1. Using 'yarn start' start the server. It should hit Liferay's headless API using Basic Authentication (test@liferay.com:test over port 8080)
  
 2. Once the server is running, you should be able to see the application running on it's own server at http://localhost:3000/ or similar. 
  
-## Remote App (iFrame) 
+## Display Method B - Remote App (iFrame) 
   
 1. Once the server is running (se previous step), you should be able to see the application running on it's own server at http://localhost:3000/ or similar. 
     
@@ -128,7 +132,7 @@ yarn start
     
 Save, then this application will be available in your widgets list.
 
-## Remote App (Custom Element) - Option 1, Javascript Resources Hosted on Remote Server
+## Display Method C - Remote App (Custom Element) - Option 1, Javascript Resources Hosted on Remote Server
   
    *NOTE: These JS files are currently being hosted by the React dev server. This is great to point to these files for development because any changes you make to your code will show as soon as you refresh your page in Liferay. When not developing it will be better to run yarn run build and update the URL's with the JS files in your build directory.*  
   
@@ -154,7 +158,7 @@ Save, then this application will be available in your widgets list.
  
 <img src="./assets/RemoteApp-Config-Option-1.png" alt="drawing" width="500"/>
   
-## Remote App (Custom Element) - Option 2, Resources Hosted in Tomcat Webapps
+## Display Method C - Remote App (Custom Element) - Option 2, Resources Hosted in Tomcat Webapps
 
    *NOTE: Choose this method when you are demoing from a live server that you have control over (such as DXPC), but you do not have access to run a separate live react server.*
   
@@ -196,7 +200,7 @@ Save, then this application will be available in your widgets list.
  
 <img src="./assets/RemoteApp-Config-Option-2.png" alt="drawing" width="500"/>
 
-## Remote App (Custom Element) - Option 3, Javascript Resources Added to Document Library
+## Display Method C - Remote App (Custom Element) - Option 3, Javascript Resources Added to Document Library
 
    *NOTE: Choose this method when you are demoing from a live server that you DO NOT have file system control over (LOL/SaaS) and you do not have access to run a separate live react server.* 
 
