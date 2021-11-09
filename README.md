@@ -1,5 +1,5 @@
 # React Chart using data from Liferay Objects (7.4)
-Example of populating data into a React Chart ([FusionCharts](https://www.fusioncharts.com/)) from a API that was created through Liferay Objects (7.4).
+Example of populating data into a React Chart ([FusionCharts](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react)) from a API that was created through Liferay Objects (7.4).
 
 ### Expected Use
 This resource can be used as a 7.4 Remote App (iFrame or Custom Element) or a separate React App hosted elsewhere.
