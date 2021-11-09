@@ -160,7 +160,7 @@ Save, then this application will be available in your widgets list.
   
 ## Display Method C - Remote App (Custom Element) - Option 2, Resources Hosted in Tomcat Webapps
 
-   *NOTE: Choose this method when you are demoing from a live server that you have control over (such as DXPC), but you do not have access to run a separate live react server.*
+   *NOTE: Choose this method when you are working on a live server that you have control over (such as DXPC), but you do not have access to run a separate live react server.*
   
 1. Within your React App, run a build using 'yarn run build'
     
@@ -202,6 +202,6 @@ Save, then this application will be available in your widgets list.
 
 ## Display Method C - Remote App (Custom Element) - Option 3, Javascript Resources Added to Document Library
 
-   *NOTE: Choose this method when you are demoing from a live server that you DO NOT have file system control over (LOL/SaaS/Site or Portal Administrator) and you do not have access to run a separate live react server.* 
+   *NOTE: Choose this method when you are working on a live server that you DO NOT have file system control over (LOL/SaaS/Site or Portal Administrator) and you do not have access to run a separate live react server.* 
 
 Similar to Option 2, however once the files are created they are added to the Liferay Document Library (or any public online resource - Google Drive, etc) and hosted using Resource URLs. 
