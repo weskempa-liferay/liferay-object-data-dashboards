@@ -24,18 +24,25 @@ class Chart extends Component {
   }
 
   componentDidMount() {
+    setInterval(() => {
+      this.getUpdate()
+    }, 5000);
 
-    function getChartData(data){
-        let chartData = [];
-        for (let i in data){
-            let obj = {};
-            obj.value = data[i].value;
-            obj.label = data[i].label;
-            chartData.push(obj);
-        }
-        return chartData;
+    this.getUpdate();
+  }
+
+  getChartData(data){
+    let chartData = [];
+    for (let i in data){
+        let obj = {};
+        obj.value = data[i].value;
+        obj.label = data[i].label;
+        chartData.push(obj);
     }
+    return chartData;
+  }
 
+  getUpdate(){
     LiferayApi("o/c/dashboarddataobjects/")
       .then((result) => {
         //console.log(result.data.items);
@@ -49,9 +56,10 @@ class Chart extends Component {
               "xAxisName": "Area",
               "yAxisName": "Data Points (OMDP)",
               "numberSuffix": "M",
-              "theme": "fusion"
+              "theme": "fusion",
+              "updateAnimDuration": "0.3"
             },
-            "data": getChartData(result.data.items)
+            "data": this.getChartData(result.data.items)
           }
 
         });
@@ -65,6 +73,7 @@ class Chart extends Component {
       <ReactFC {...this.state} />
     );
   }
+
 }
 
 export default Chart;
