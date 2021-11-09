@@ -10,6 +10,8 @@ This resource can be used as a 7.4 Remote App (iFrame or Custom Element) or a se
 
 Chart is set to refresh it's data via API on a 5-second interval. Change the data using the UI or headless API endpoints to get an instant update!
 
+![Life Data Refresh](./assets/React-App_1.gif)
+
 ## Add [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) policy 
 
 In System Settings > Security Tools > Web Contexts Cross-Origin Resource Sharing (CORS) create a CORS policy. Default values work to allow access Cross-Origin Resource Sharing for this resource.
