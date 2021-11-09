@@ -62,6 +62,8 @@ yarn start
 
     Example: http://localhost:8080/o/api/?endpoint=http://localhost:8080/o/c/dashboarddataobjects/openapi.json
 
+<img src="./assets/API_GUI.png" alt="drawing" width="500"/>
+
 2. Add the following data and press execute. This will add the number of records shown below.
     * *Note: Feel free to use your own labels and values.*
 
