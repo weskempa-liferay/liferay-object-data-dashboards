@@ -4,6 +4,10 @@ Example of populating data into a React Chart ([FusionCharts](https://www.fusion
 ### Expected Use
 This resource can be used as a 7.4 Remote App (iFrame or Custom Element) or a separate React App hosted elsewhere.
 
+## Live Data Refresh!
+
+Chart is set to refresh it's data via API on a 5-second interval. Change the data using the UI or headless API endpoints to get an instant update!
+
 ![Component Outcomes](./assets/Component-Display-2.png)
 
 ## Add [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) policy 
@@ -52,7 +56,7 @@ yarn start
 
 ## Add Data
 
-1. Using the newly created API enpoint for dashboarddataobjects, find the bulk endpoint
+1. Using the newly created API enpoint for dashboarddataobjects, find the /batch post endpoint
 
     Example: http://localhost:8080/o/api/?endpoint=http://localhost:8080/o/c/dashboarddataobjects/openapi.json
 
