@@ -154,14 +154,15 @@ File sizes after gzip:
     * *Note 2: Use the (+) icon for adding additional URL values.* 
     * *Note 3: The build file names change with every build. Remember to keep them up to date when future builds are made.* 
 
-| Field     |  Value                                                                   |
-| :---      | :---                                                                     |
-| Name      | React Bar Chart                                                          |
-| Type      | Custom Element                                                           |
-| URL 1     | http://localhost:8080/react-bar-chart/static/js/2.f86fd244.chunk.js      |
-| URL 2 (+) | http://localhost:8080/react-bar-chart/static/js/main.c7b9ace8.chunk.js   |
-| URL 3 (+) | http://localhost:8080/react-bar-chart/static/js/runtime-main.1ad6e658.js |
-| CSS       | http://localhost:8080/react-bar-chart/static/css/main.26c647c1.chunk.css |
+| Field             |  Value                                                                   |
+| :---              | :---                                                                     |
+| Name              | React Bar Chart                                                          |
+| Type              | Custom Element                                                           |
+| HTML Element Name | react-headless-chart                                                           |
+| URL 1             | http://localhost:8080/react-bar-chart/static/js/2.f86fd244.chunk.js      |
+| URL 2 (+)         | http://localhost:8080/react-bar-chart/static/js/main.c7b9ace8.chunk.js   |
+| URL 3 (+)         | http://localhost:8080/react-bar-chart/static/js/runtime-main.1ad6e658.js |
+| CSS               | http://localhost:8080/react-bar-chart/static/css/main.26c647c1.chunk.css |
  
 Save, then this application will be available in your widgets list.
  
