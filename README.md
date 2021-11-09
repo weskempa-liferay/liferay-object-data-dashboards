@@ -48,14 +48,6 @@ This provides a very broad rule. A more restricted policy is recommended for pro
 
 4. Return to the Details tab and publish your new object.
 
-## Clone Repo and Install Packages
-Clone repo and once ready run the following:
-
-yarn install
-
-## Start local server
-yarn start
-
 ## Add Data
 
 1. Using the newly created API enpoint for dashboarddataobjects, find the /batch post endpoint
@@ -105,6 +97,14 @@ yarn start
   ```
 
 <img src="./assets/Component-Outcomes.png" alt="drawing" width="500"/>
+
+## Clone Repo and Install Packages
+Clone repo and once ready run the following:
+
+yarn install
+
+## Start local server
+yarn start
 
 # Display Method Options
 
