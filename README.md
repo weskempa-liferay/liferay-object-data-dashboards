@@ -194,4 +194,4 @@ Save, then this application will be available in your widgets list.
 
 ## Remote App (Custom Element) - Option 3, Javascript Resources Added to Document Library
 
-Similar as Option 2, however once the files are created they are added to the Liferay Document Library and hosted using Resource URLs. 
+Similar to Option 2, however once the files are created they are added to the Liferay Document Library and hosted using Resource URLs. 
