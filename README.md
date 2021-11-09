@@ -134,7 +134,7 @@ Save, then this application will be available in your widgets list.
 
 ## Display Method C - Remote App (Custom Element) - Option 1, Javascript Resources Hosted on Remote Server
   
-   *NOTE: These JS files are currently being hosted by the React dev server. This is great to point to these files for development because any changes you make to your code will show as soon as you refresh your page in Liferay. When not developing it will be better to run yarn run build and update the URL's with the JS files in your build directory.*  
+   *NOTE: These JS files are currently being hosted by the React dev server. This is great to point to these files for development because any changes you make to your code will show as soon as you refresh your page in Liferay. When not developing it will be better to run yarn run build and update the URL's with the JS files in your build directory (Options 2 & 3).*  
   
 1. Within your React App, run your server using 'yarn start'
     
