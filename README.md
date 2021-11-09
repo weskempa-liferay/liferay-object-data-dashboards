@@ -108,7 +108,7 @@ yarn start
 
 # Display Method Options
 
-So many ways to use it!
+So many ways to use Remote Apps!! *Yey!*
 
 ## Display Method A - Use as separate React App
   
