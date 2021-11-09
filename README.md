@@ -127,8 +127,32 @@ yarn start
 | URL      | http://localhost:3000/  |
     
 Save, then this application will be available in your widgets list.
+
+## Remote App (Custom Element) - Option 1, Javascript Resources Hosted on Remote Server
   
-## Remote App (Custom Element)
+1. Within your React App, run your server using 'yarn start'
+    
+2. Once your server is started, your Javascript resources will be available accross the network. 
+
+3. Then, navigate to Remote Apps within Liferay's control panel.
+    
+4. Create a new Remote App with the following field details.
+    * *Note 1: Use the (+) icon for adding additional URL values.* 
+
+| Field             |  Value                                                                   |
+| :---              | :---                                                                     |
+| Name              | React Bar Chart                                                          |
+| Type              | Custom Element                                                           |
+| HTML Element Name | react-headless-chart                                                     |
+| URL 1             | http://localhost:3000/static/js/main.chunk.js                            |
+| URL 2 (+)         | http://localhost:3000/static/js/vendors~main.chunk.js                    |
+| URL 3 (+)         | http://localhost:3000/static/js/bundle.js                                |
+ 
+Save, then this application will be available in your widgets list.
+ 
+<img src="./assets/RemoteApp-Config-Option-1.png" alt="drawing" width="500"/>
+  
+## Remote App (Custom Element) - Option 2, Resources Hosted in Tomcat Webapps
   
 1. Within your React App, run a build using 'yarn run build'
     
@@ -150,7 +174,7 @@ File sizes after gzip:
 5. Then, navigate to Remote Apps within Liferay's control panel.
     
 6. Create a new Remote App with the following field details. 
-    * *Note 1: Reference the build names from the previous step.*
+    * *Note 1: Reference the build names from step 3.*
     * *Note 2: Use the (+) icon for adding additional URL values.* 
     * *Note 3: The build file names change with every build. Remember to keep them up to date when future builds are made.* 
 
@@ -158,7 +182,7 @@ File sizes after gzip:
 | :---              | :---                                                                     |
 | Name              | React Bar Chart                                                          |
 | Type              | Custom Element                                                           |
-| HTML Element Name | react-headless-chart                                                           |
+| HTML Element Name | react-headless-chart                                                     |
 | URL 1             | http://localhost:8080/react-bar-chart/static/js/2.f86fd244.chunk.js      |
 | URL 2 (+)         | http://localhost:8080/react-bar-chart/static/js/main.c7b9ace8.chunk.js   |
 | URL 3 (+)         | http://localhost:8080/react-bar-chart/static/js/runtime-main.1ad6e658.js |
@@ -166,4 +190,8 @@ File sizes after gzip:
  
 Save, then this application will be available in your widgets list.
  
-<img src="./assets/RemoteApp-Config.png" alt="drawing" width="500"/>
+<img src="./assets/RemoteApp-Config-Option-2.png" alt="drawing" width="500"/>
+
+## Remote App (Custom Element) - Option 3, Javascript Resources Added to Document Library
+
+Similar as Option 2, however once the files are created they are added to the Liferay Document Library and hosted using Resource URLs. 
