@@ -133,7 +133,7 @@ So many ways to use Remote Apps!! *Yey!*
 Save, then this application will be available in your widgets list.
 
 ## Display Method C - Remote App's Custom Element
-### Option 1, Javascript Resources Hosted on Remote Server
+### [Option 1] Javascript Resources Hosted on Remote Server
   
    *NOTE: These JS files are currently being hosted by the React dev server. This is great to point to these files for development because any changes you make to your code will show as soon as you refresh your page in Liferay. When not developing it will be better to run yarn run build and update the URL's with the JS files in your build directory (Options 2 & 3).*  
   
@@ -159,7 +159,7 @@ Save, then this application will be available in your widgets list.
  
 <img src="./assets/RemoteApp-Config-Option-1.png" alt="drawing" width="500"/>
   
-### Option 2, Resources Hosted in Tomcat Webapps
+### [Option 2] Resources Hosted in Tomcat Webapps
 
    *NOTE: Choose this method when you are working on a live server that you have control over (such as DXPC), but you do not have access to run a separate live react server.*
   
@@ -201,7 +201,7 @@ Save, then this application will be available in your widgets list.
  
 <img src="./assets/RemoteApp-Config-Option-2.png" alt="drawing" width="500"/>
 
-### Option 3, Javascript Resources Added to Document Library
+### [Option 3] Javascript Resources Added to Document Library
 
    *NOTE: Choose this method when you are working on a live server that you DO NOT have file system control over (LOL/SaaS/Site or Portal Administrator) and you do not have access to run a separate live react server.* 
 
