@@ -116,7 +116,7 @@ So many ways to use Remote Apps!! *Yey!*
  
 2. Once the server is running, you should be able to see the application running on it's own server at http://localhost:3000/ or similar. 
  
-## Display Method B - Remote App (iFrame) 
+## Display Method B - Remote App's iFrame 
   
 1. Once the server is running (se previous step), you should be able to see the application running on it's own server at http://localhost:3000/ or similar. 
     
@@ -132,7 +132,8 @@ So many ways to use Remote Apps!! *Yey!*
     
 Save, then this application will be available in your widgets list.
 
-## Display Method C - Remote App (Custom Element) - Option 1, Javascript Resources Hosted on Remote Server
+## Display Method C - Remote App's Custom Element
+### Option 1, Javascript Resources Hosted on Remote Server
   
    *NOTE: These JS files are currently being hosted by the React dev server. This is great to point to these files for development because any changes you make to your code will show as soon as you refresh your page in Liferay. When not developing it will be better to run yarn run build and update the URL's with the JS files in your build directory (Options 2 & 3).*  
   
@@ -158,7 +159,8 @@ Save, then this application will be available in your widgets list.
  
 <img src="./assets/RemoteApp-Config-Option-1.png" alt="drawing" width="500"/>
   
-## Display Method C - Remote App (Custom Element) - Option 2, Resources Hosted in Tomcat Webapps
+## Display Method C - Remote App's Custom Element
+### Option 2, Resources Hosted in Tomcat Webapps
 
    *NOTE: Choose this method when you are working on a live server that you have control over (such as DXPC), but you do not have access to run a separate live react server.*
   
@@ -200,7 +202,8 @@ Save, then this application will be available in your widgets list.
  
 <img src="./assets/RemoteApp-Config-Option-2.png" alt="drawing" width="500"/>
 
-## Display Method C - Remote App (Custom Element) - Option 3, Javascript Resources Added to Document Library
+## Display Method C - Remote App's Custom Element
+### Option 3, Javascript Resources Added to Document Library
 
    *NOTE: Choose this method when you are working on a live server that you DO NOT have file system control over (LOL/SaaS/Site or Portal Administrator) and you do not have access to run a separate live react server.* 
 
