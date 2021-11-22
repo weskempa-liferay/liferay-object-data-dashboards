@@ -37,6 +37,7 @@ const baseFetch = async (url, {body, method = 'GET'} = {}) => {
 	const response = await fetch(apiPath + '/' + url, {
 		...(body && {body: JSON.stringify(body)}),
 		headers: headers,
+		mode: 'no-cors',
 		method,
 	});
 
