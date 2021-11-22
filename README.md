@@ -1,5 +1,5 @@
 # React Chart using data from Liferay Objects (7.4)
-Example of populating data into a React Chart ([FusionCharts](https://www.fusioncharts.com/)) from a API that was created through Liferay Objects (7.4).
+Example of populating data into a React Chart ([FusionCharts](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react)) from a API that was created through Liferay Objects (7.4).
 
 ### Expected Use
 This resource can be used as a 7.4 Remote App (iFrame or Custom Element) or a separate React App hosted elsewhere.
@@ -47,14 +47,6 @@ This provides a very broad rule. A more restricted policy is recommended for pro
 3. Leave the object configuration in Company Scope (default).
 
 4. Return to the Details tab and publish your new object.
-
-## Clone Repo and Install Packages
-Clone repo and once ready run the following:
-
-yarn install
-
-## Start local server
-yarn start
 
 ## Add Data
 
@@ -104,15 +96,27 @@ yarn start
   ]
   ```
 
+## Clone Repo and Install Packages
+Clone repo and once ready run the following:
+
+yarn install
+
+## Start local server
+yarn start
+
 <img src="./assets/Component-Outcomes.png" alt="drawing" width="500"/>
-  
-## Use as separate React App
+
+# Display Method Options
+
+So many ways to use Remote Apps!! *Yey!*
+
+## Display Method A - Use as separate React App
   
 1. Using 'yarn start' start the server. It should hit Liferay's headless API using Basic Authentication (test@liferay.com:test over port 8080)
  
 2. Once the server is running, you should be able to see the application running on it's own server at http://localhost:3000/ or similar. 
  
-## Remote App (iFrame) 
+## Display Method B - Remote App's iFrame 
   
 1. Once the server is running (se previous step), you should be able to see the application running on it's own server at http://localhost:3000/ or similar. 
     
@@ -128,9 +132,10 @@ yarn start
     
 Save, then this application will be available in your widgets list.
 
-## Remote App (Custom Element) - Option 1, Javascript Resources Hosted on Remote Server
+## Display Method C - Remote App's Custom Element
+### [Option 1] Javascript Resources Hosted on Remote Server
   
-   *NOTE: These JS files are currently being hosted by the React dev server. This is great to point to these files for development because any changes you make to your code will show as soon as you refresh your page in Liferay. When not developing it will be better to run yarn run build and update the URL's with the JS files in your build directory.*  
+   *NOTE: These JS files are currently being hosted by the React dev server. This is great to point to these files for development because any changes you make to your code will show as soon as you refresh your page in Liferay. When not developing it will be better to run yarn run build and update the URL's with the JS files in your build directory (Options 2 & 3).*  
   
 1. Within your React App, run your server using 'yarn start'
     
@@ -154,9 +159,9 @@ Save, then this application will be available in your widgets list.
  
 <img src="./assets/RemoteApp-Config-Option-1.png" alt="drawing" width="500"/>
   
-## Remote App (Custom Element) - Option 2, Resources Hosted in Tomcat Webapps
+### [Option 2] Resources Hosted in Tomcat Webapps
 
-   *NOTE: Choose this method when you are demoing from a live server that you have control over (such as DXPC), but you do not have access to run a separate live react server.*
+   *NOTE: Choose this method when you are working on a live server that you have control over (such as DXPC), but you do not have access to run a separate live react server.*
   
 1. Within your React App, run a build using 'yarn run build'
     
@@ -196,8 +201,8 @@ Save, then this application will be available in your widgets list.
  
 <img src="./assets/RemoteApp-Config-Option-2.png" alt="drawing" width="500"/>
 
-## Remote App (Custom Element) - Option 3, Javascript Resources Added to Document Library
+### [Option 3] Javascript Resources Added to Document Library
 
-   *NOTE: Choose this method when you are demoing from a live server that you DO NOT have file system control over (LOL/SaaS) and you do not have access to run a separate live react server.* 
+   *NOTE: Choose this method when you are working on a live server that you DO NOT have file system control over (LOL/SaaS/Site or Portal Administrator) and you do not have access to run a separate live react server.* 
 
 Similar to Option 2, however once the files are created they are added to the Liferay Document Library (or any public online resource - Google Drive, etc) and hosted using Resource URLs. 
