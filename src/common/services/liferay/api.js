@@ -28,7 +28,7 @@ const baseFetch = async (url, {body, method = 'GET'} = {}) => {
 
 	if (getLiferayAuthenticationToken()===""){
 		headers = new Headers({
-	    	'Authorization': 'Basic ' + btoa('test@liferay.com:test'), 
+	    	'Authorization': 'Basic ' + Buffer('test@liferay.com:test').toString('base64'), 
 			'Content-Type': 'application/json'
 	    });
 	    apiPath = "http://localhost:8080";
