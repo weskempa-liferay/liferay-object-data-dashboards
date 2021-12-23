@@ -1,6 +1,6 @@
 # React Chart using data from Liferay Objects (7.4)
 [![Deploy to
-Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lgdd/liferay-object-data-dashboards)
+Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/weskempa-liferay/liferay-object-data-dashboards)
 
 Example of populating data into a React Chart ([FusionCharts](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react)) from a API that was created through Liferay Objects (7.4).
 
