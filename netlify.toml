@@ -1,0 +1,8 @@
+[build]
+  command = "yarn build"
+  publish = "build"
+
+[template.environment]
+  REACT_APP_LIFERAY_API = "change me to your Liferay instance address"
+  REACT_APP_LIFERAY_USER = "change me to a privileged Liferay user"
+  REACT_APP_LIFERAY_PASSWORD = "change me to a privileged Liferay user password"
