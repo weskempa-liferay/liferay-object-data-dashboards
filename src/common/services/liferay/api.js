@@ -1,42 +1,31 @@
-const {REACT_APP_LIFERAY_API = window.location.origin} = process.env;
+const getAuthzHeaders = () => {
+	if (typeof window['Liferay'] == 'undefined') {
+		const user = process.env.REACT_APP_LIFERAY_USER;
+		const password = process.env.REACT_APP_LIFERAY_PASSWORD;
+		const base64credentials = Buffer(`${user}:${password}`).toString(
+			'base64'
+		);
 
-export const getLiferayAuthenticationToken = () => {
-	try {
-		// eslint-disable-next-line no-undef
-		const token = Liferay.authToken;
-
-		return token;
-	} catch (error) {
-		console.warn('Not able to find Liferay auth token\n', error);
-
-		return '';
+		// Basic Auth for local development testing only
+		// Auth token is the best method for live use and
+		// is available when acting as a Web Component (Custom Element)
+		return new Headers({
+			'Authorization': 'Basic ' + base64credentials,
+			'Content-Type': 'application/json',
+		});
 	}
+	return new Headers({
+		'Content-Type': 'application/json',
+		'x-csrf-token': window['Liferay'].authToken,
+	});
 };
 
 const baseFetch = async (url, {body, method = 'GET'} = {}) => {
-
-    let headers = new Headers({
-		'Content-Type': 'application/json',
-		'x-csrf-token': getLiferayAuthenticationToken()
-	})
-
-	let apiPath = REACT_APP_LIFERAY_API;
-
-	// Basic Auth for local development testing only
-	// Auth token is the best method for live use and
-	// is available when acting as a Web Component (Custom Element)
-
-	if (getLiferayAuthenticationToken()===""){
-		headers = new Headers({
-	    	'Authorization': 'Basic ' + btoa('test@liferay.com:test'), 
-			'Content-Type': 'application/json'
-	    });
-	    apiPath = "http://localhost:8080";
-	}
+	const apiPath = process.env.REACT_APP_LIFERAY_API;
 
 	const response = await fetch(apiPath + '/' + url, {
 		...(body && {body: JSON.stringify(body)}),
-		headers: headers,
+		headers: getAuthzHeaders(),
 		method,
 	});
 
@@ -44,7 +33,5 @@ const baseFetch = async (url, {body, method = 'GET'} = {}) => {
 
 	return {data};
 };
-
-export {REACT_APP_LIFERAY_API};
 
 export default baseFetch;
