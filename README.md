@@ -17,18 +17,14 @@ Chart is set to refresh it's data via API on a 5-second interval. Change the dat
 
 ## Add [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) policy 
 
-In System Settings > Security Tools > Web Contexts Cross-Origin Resource Sharing (CORS) create a CORS policy. Default values work to allow access Cross-Origin Resource Sharing for this resource.
+In System Settings > Security Tools > Portal Cross-Origin Resource Sharing (CORS) create a CORS policy. Default values need to be changed to allow for Cross-Origin Resource Sharing for this the new headless api endpointresource.
 
-Default values are: 
+Add or the existing entry by including the following url pattern.
 
 | Field                             |  Value                                          |
 | :---                              | :---                                            |
-| Dynamic Web Context OSGi filter   | (&(!(liferay.cors=false))(osgi.jaxrs.name=\*))  |
-| URL Pattern                       | \*                                              |
-| CORS Response Headers             | Access-Control-Allow-Credentials: true          |
-| CORS Response Headers             | Access-Control-Allow-Headers: \*                |
-| CORS Response Headers             | Access-Control-Allow-Methods: \*                |
-| CORS Response Headers             | Access-Control-Allow-Origin: \*                 |
+| URL Pattern                       | /o/c/*                                          |
+
 
 This provides a very broad rule. A more restricted policy is recommended for production use.
 
