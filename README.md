@@ -100,6 +100,14 @@ Clone repo and once ready run the following:
 
 yarn install
 
+## Configure your development properties from within the .env file
+
+Example values:
+
+REACT_APP_LIFERAY_API=https://localhost.com
+REACT_APP_LIFERAY_USER=wesley.kempa@liferay.com
+REACT_APP_LIFERAY_PASSWORD=**********
+
 ## Start local server
 yarn start
 
