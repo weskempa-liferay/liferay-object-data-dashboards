@@ -105,7 +105,9 @@ yarn install
 Example values:
 
 REACT_APP_LIFERAY_API=https://localhost.com
+
 REACT_APP_LIFERAY_USER=wesley.kempa@liferay.com
+
 REACT_APP_LIFERAY_PASSWORD=**********
 
 ## Start local server
