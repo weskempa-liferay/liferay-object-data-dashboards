@@ -104,7 +104,7 @@ yarn install
 
 Example values:
 
-REACT_APP_LIFERAY_API=https://localhost.com
+REACT_APP_LIFERAY_API=https://localhost.com:8080
 
 REACT_APP_LIFERAY_USER=wesley.kempa@liferay.com
 
