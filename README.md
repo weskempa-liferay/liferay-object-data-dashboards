@@ -100,7 +100,7 @@ Clone repo and once ready run the following:
 
 yarn install
 
-## Configure your development properties from within the .env file
+## Configure your development properties from within the .env file. Since this is a "." file it will be hidden by default in most operating systems.
 
 Example values:
 
