@@ -21,7 +21,8 @@ const getAuthzHeaders = () => {
 };
 
 const baseFetch = async (url, {body, method = 'GET'} = {}) => {
-	const apiPath = process.env.REACT_APP_LIFERAY_API;
+	const apiPath = (process.env.REACT_APP_LIFERAY_API)?
+						process.env.REACT_APP_LIFERAY_API:"";
 
 	const response = await fetch(apiPath + '/' + url, {
 		...(body && {body: JSON.stringify(body)}),
