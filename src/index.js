@@ -1,22 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 import Chart from './components/Chart';
+import WebComponent from 'webcomponent';
 
 import './common/styles/index.scss';
 
-class WebComponent extends HTMLElement {
+class LiferayChart extends WebComponent {
 	connectedCallback() {
-
-		ReactDOM.render(
-			<Chart  />,
-			this
-		);
+		let root = createRoot( document.getElementsByTagName("react-headless-chart")[0] );
+		root.render(<Chart  />);
 	}
 }
 
 const ELEMENT_ID = 'react-headless-chart';
 
 if (!customElements.get(ELEMENT_ID)) {
-	customElements.define(ELEMENT_ID, WebComponent);
+	customElements.define(ELEMENT_ID, LiferayChart);
 }
+

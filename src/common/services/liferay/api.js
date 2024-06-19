@@ -1,4 +1,7 @@
+import { Buffer } from 'buffer';
+
 const getAuthzHeaders = () => {
+
 	if (typeof window['Liferay'] == 'undefined') {
 		const user = process.env.REACT_APP_LIFERAY_USER;
 		const password = process.env.REACT_APP_LIFERAY_PASSWORD;
